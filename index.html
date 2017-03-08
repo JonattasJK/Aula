@@ -1,0 +1,21 @@
+<html ng-app="HellApp"> 
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello World Angular!</title>
+
+        <style rel="stylesheet" href="lib/Bootstrap/css/bootstrap.min.css"> </style>
+
+        <script type="text/javascript" src="lib/angular.min.js"> </script>
+        <script type="text/javascript" src="js/app.js"> </script>
+    </head>
+    <body ng-controller="mainCtrl">
+        nome: <input type="text" ng-model="nome"/>
+        sobrenome: <input type="text" ng-model="sobrenome"/>
+        <!--<p>{{entradaTexto}}</p>-->
+
+        <button ng-click="exibirConteudo(nome,sobrenome)">Exibir</button>
+
+        <p>{{nome}}{{sobrenome}}</p>
+
+    </body>
+</html>
